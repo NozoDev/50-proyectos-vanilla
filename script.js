@@ -18,3 +18,7 @@ const testimonials = [
     text: "Thank you for making it painless, pleasant and most of all hassle free! I wish I would have thought of it first. The very best.",
   },
 ];
+
+const imagen = document.querySelector("img");
+const text = document.querySelector(".text");
+const title = document.querySelector(".title");
