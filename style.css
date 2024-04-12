@@ -9,13 +9,30 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: wheat;
 }
 
 .contenedor {
   width: 650px;
-  height: 350px;
+  height: 300px;
   border-radius: 10px;
-  background-color: cornflowerblue;
-  border: 1px solid black;
+  min-width: 400;
+  padding: 70px 20px;
+  background-color: slateblue;
+  margin: 5px;
+  position: relative;
+  color: white;
+  font-family: cursive;
+  font-size: 25px;
 }
 
+.img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
+  width: 120px;
+  border-radius: 50%;
+}
