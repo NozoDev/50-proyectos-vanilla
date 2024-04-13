@@ -19,6 +19,27 @@ const testimonials = [
   },
 ];
 
-const imagen = document.querySelector("img");
-const text = document.querySelector(".text");
-const title = document.querySelector(".title");
+const imagenEl = document.querySelector("img");
+const textEl = document.querySelector(".text");
+const titleEl = document.querySelector(".username");
+
+let indiceImagenActual = 0; // se inicializa variable en 0 que se utiliza para rastrear el indice
+changeImg();
+
+function changeImg() {  //se define fncion que se encangar de cambiar la imegen y el text del testimonio.
+  const { name, photoUrl, text } = testimonials[indiceImagenActual];
+
+  imagenEl.src = photoUrl;
+  textEl.innerText = text;
+  titleEl.innerText = name;
+
+  indiceImagenActual++
+
+  if (indiceImagenActual === testimonials.length) {
+    indiceImagenActual = 0;
+  }
+
+  setTimeout(() => {
+    changeImg();
+  }, 3000);
+}
