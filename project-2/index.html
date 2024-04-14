@@ -9,17 +9,23 @@
   <body>
     <div class="content">
       <h1>Tip Calculator</h1>
-      <p>Enter the bill amount and tip percentage to calculate the total.</p>
-      <label for="bill">Bill amount</label>
-      <input id="bill" type="number" />
+      <p class="parrafo">
+        Enter the bill amount and tip percentage to calculate the total.
+      </p>
+      <div class="content-info">
+        <label for="bill">Bill amount</label>
+        <input id="bill" type="number" />
+
+        <br />
+
+        <label for="tip">Bill amount</label>
+        <input id="tip" type="number" />
+        <br />
+      </div>
       <br />
-      <label for="tip">Bill amount</label>
-      <input id="tip" type="number" />
+      <span id="total">Total:</span>
       <br />
       <button id="calculate">Calculate</button>
-      <br />
-      <label for="total"></label>
-      <span id="total">Total:</span>
       <script src="script.js"></script>
     </div>
   </body>
