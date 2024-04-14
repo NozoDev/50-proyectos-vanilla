@@ -44,10 +44,28 @@ label {
   width: 100%;
   display: block;
   text-align: left;
+  margin-top: 5px;
 }
 
 #bill,
 #tip {
   width: 100%;
   height: 50px;
+}
+
+#calculate {
+  width: 100%;
+  height: 50px;
+  background-color: darkgreen;
+  border-radius: 10px;
+  border: none;
+  margin-top: 5px;
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+}
+
+#calculate:hover {
+  background-color: darkgray;
+  cursor: pointer;
 }
