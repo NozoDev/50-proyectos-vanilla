@@ -4,9 +4,18 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.content {
+  margin: 100px auto;
+  padding: 20px;
+  border: 2px solid black;
+  width: 650px;
+  height: 450px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 45px;
+  font-weight: 900;
 }
