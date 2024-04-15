@@ -47,6 +47,12 @@ label {
   margin-top: 5px;
 }
 
+input,
+#total {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 #bill,
 #tip {
   width: 100%;
@@ -63,6 +69,7 @@ label {
   font-size: 20px;
   color: black;
   font-weight: 600;
+  margin-top: 10px;
 }
 
 #calculate:hover {
