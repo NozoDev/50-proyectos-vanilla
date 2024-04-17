@@ -1,6 +1,22 @@
-//Paso -1 :Obtener elementos del dom
+//Paso 1. Obtener elementos del dom
 const form = document.getElementById("form");
 const input = document.getElementById("tarea");
 const taskList = document.getElementById("list");
 
-form.addEventListener("submit", function (e) {});
+// paso 2. escuchar el evento de envio del formulario
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); // evita que se recargue la pagina
+  addTask();
+});
+
+// paso 3. crear la funcion para agregar tarea
+
+function addTask() {
+  const taskText = input.value.trim(); // esto obtiene el valor del campo de text y elimina espacios en blanco
+  if (taskText !== "") {
+    const taskItem = document.createElement("li");
+    taskItem.textContent = taskText;
+    taskList.appendChild(taskItem);
+    input.value = ""; // limpiar el campo de texto despues de agregar la tarea
+  }
+}
