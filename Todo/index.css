@@ -50,7 +50,7 @@ body {
 .task {
   list-style: none;
   text-align: left;
-  padding: 10px;
+  padding: 1rem;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
@@ -58,4 +58,15 @@ body {
   border-radius: 20px;
   background-color: aliceblue;
   cursor: pointer;
+}
+
+.btn-delete {
+  width: 20px;
+}
+
+.btn-delete:hover {
+  cursor: pointer;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
 }
