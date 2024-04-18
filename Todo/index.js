@@ -17,6 +17,10 @@ function addTask() {
     const taskItem = document.createElement("li");
     taskItem.classList.add("task");
     taskItem.textContent = taskText;
+
+    const deleteBtn = addDelete();
+    taskItem.appendChild(deleteBtn);
+
     taskList.appendChild(taskItem);
     input.value = ""; // limpiar el campo de texto despues de agregar la tarea
   }
@@ -32,4 +36,19 @@ taskList.addEventListener("click", function (e) {
 
 function toggleTaskCompletion(taskItem) {
   taskItem.classList.toggle("completed");
+}
+
+//crear y devolver el boton de eliminar
+function addDelete() {
+  const deleteBtn = document.createElement("button");
+
+  deleteBtn.textContent = "X";
+  deleteBtn.className = "btn-delete";
+
+  deleteBtn.addEventListener("click", (e) => {
+    const item = e.target.parentElement;
+    taskList.removeChild(item);
+  });
+
+  return deleteBtn;
 }
