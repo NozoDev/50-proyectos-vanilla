@@ -1,0 +1,53 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00000079;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: burlywood;
+  gap: 5px;
+}
+.lista {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.imagen {
+  width: 100px;
+}
+
+.contenedor-json {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta-producto {
+  width: 300px; /* Ancho deseado */
+  height: 400px; /* Alto deseado */
+  padding: 20px; /* Espacio interno */
+  margin: 10px; /* Espacio externo */
+  border: 1px solid #ccc; /* Borde */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  /* Otros estilos */
+}
+
+.tarjeta-producto img {
+  width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */
+  height: 200px; /* Altura automática para mantener la proporción */
+}
