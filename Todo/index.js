@@ -18,8 +18,7 @@ function addTask() {
     taskItem.classList.add("task");
     taskItem.textContent = taskText;
 
-    const deleteBtn = addDelete();
-    taskItem.appendChild(deleteBtn);
+    taskItem.appendChild(addDelete());
 
     taskList.appendChild(taskItem);
     input.value = ""; // limpiar el campo de texto despues de agregar la tarea
