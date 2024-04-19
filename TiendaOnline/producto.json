@@ -1,0 +1,13 @@
+{
+  "nombre": "Laptop",
+  "marca":"XYZ",
+  "precio":"2.482.402",
+  "caracteristicas": ["4gb Ram", "18 pulgadas"],
+  "imagen": "./imagenes/img1.jpg",
+  "procesador": "Intel Core i5 a 2.5GHZ",
+  "almacenamiento" :{
+    "tipo":"SSD",
+    "capacidad": "256gb"
+  },
+  "sistema_operativo":"windows 11"
+}
