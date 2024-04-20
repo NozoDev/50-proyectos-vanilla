@@ -18,6 +18,7 @@ function crearTarjetaProductos(productos) {
       producto.almacenamiento.capacidad
     }</p>
       <p>Sistema Operativo: ${producto.sistema_operativo}</p>
+      <button>Comprar</button>
     `;
 
     main.appendChild(nuevoProducto);
