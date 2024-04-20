@@ -9,7 +9,7 @@ function crearTarjetaProductos(productos) {
     //agregar contenido dentro de la tarjeta
 
     nuevoProducto.innerHTML = `
-      <h2>${producto.nombre}</h2>
+    <h2>${producto.nombre}</h2>
       <img class="imagen" src="${producto.imagen}" alt="${producto.nombre}">
       <p>Precio: ${producto.precio}</p>
       <p>Características: ${producto.caracteristicas.join(", ")}</p>
@@ -17,12 +17,20 @@ function crearTarjetaProductos(productos) {
       <p>Almacenamiento: ${producto.almacenamiento.tipo} - ${
       producto.almacenamiento.capacidad
     }</p>
-      <p>Sistema Operativo: ${producto.sistema_operativo}</p>
-      <button>Comprar</button>
+    <p>Sistema Operativo: ${producto.sistema_operativo}</p>
+    <button class="btn-btn">Comprar</button>
     `;
+
+    const product = nuevoProducto.querySelector(".btn-btn");
+    product.addEventListener("click", () => {
+      comprarProducto(producto);
+    });
 
     main.appendChild(nuevoProducto);
   });
 }
-
 crearTarjetaProductos(productos);
+
+function comprarProducto(producto) {
+  console.log("comprando", producto);
+}
