@@ -15,7 +15,7 @@ h2 {
 }
 
 .title-lista a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -23,16 +23,18 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: burlywood;
-  align-items: center;
+  background-color: #000000;
+  color: white;
+
   gap: 5px;
   padding: 1rem;
+  font-size: 20px;
 }
 
 .lista {
   display: flex;
   justify-content: space-evenly;
-  gap: 10px;
+  gap: 1.5rem;
   margin: 10px;
   text-decoration: none;
   list-style: none;
@@ -46,6 +48,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .tarjeta-producto {
@@ -67,6 +70,19 @@ h2 {
   margin-top: 100px;
 }
 
-.bi bi-cart {
-  background-color: black;
+.cart {
+  color: white;
+}
+
+.cart:hover {
+  border-radius: 20px;
+  color: red;
+  text-align: center;
+}
+
+.contenedor-formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }

@@ -40,6 +40,45 @@ const productos = [
     },
     sistema_operativo: "windows 11",
   },
+  {
+    id: 4,
+    nombre: "Juego Gamer",
+    precio: "21.82.402",
+    caracteristicas: ["Pantalla, laptop y mesa incorpada"],
+    imagen: "./imagenes/img3.jpg",
+    procesador: "Intel Ryzen 9 a 3.5GHZ",
+    almacenamiento: {
+      tipo: "SSD",
+      capacidad: "1000gb",
+    },
+    sistema_operativo: "windows 11",
+  },
+  {
+    id: 5,
+    nombre: "Juego Gamer",
+    precio: "21.82.402",
+    caracteristicas: ["Pantalla, laptop y mesa incorpada"],
+    imagen: "./imagenes/img4.jpg",
+    procesador: "Intel Ryzen 9 a 3.5GHZ",
+    almacenamiento: {
+      tipo: "SSD",
+      capacidad: "1000gb",
+    },
+    sistema_operativo: "windows 11",
+  },
+  {
+    id: 6,
+    nombre: "Juego Gamer",
+    precio: "21.82.402",
+    caracteristicas: ["Pantalla, laptop y mesa incorpada"],
+    imagen: "./imagenes/img5.jpg",
+    procesador: "Intel Ryzen 9 a 3.5GHZ",
+    almacenamiento: {
+      tipo: "SSD",
+      capacidad: "1000gb",
+    },
+    sistema_operativo: "windows 11",
+  },
 ];
 
 export default productos;
