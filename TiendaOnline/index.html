@@ -21,24 +21,29 @@
     <title>Gadget Galaxy</title>
   </head>
   <body>
-    <nav class="navbar">
-      <h1>Logo</h1>
-      <ul class="lista">
-        <li class="title-lista"><a href="#">Inicio</a></li>
-        <li class="title-lista"><a href="#">Portátil</a></li>
-        <li class="title-lista"><a href="#">PC de Mesa</a></li>
-        <li class="cart">
-          <a href="#"><i class="bx bx-cart cart"></i></a>
-        </li>
-      </ul>
+    <div class="contenedor">
+      <nav class="navbar">
+        <h1>Logo</h1>
+        <i class="bx bx-cart">
+          <div class="buy-card">
+            <ul class="nav-card">
+              <li>imagen</li>
+              <li>nombre</li>
+              <li>precio</li>
+              <li>cantidad</li>
+            </ul>
+            <button>Vaciar carrito</button>
+          </div>
+        </i>
 
-      <div class="contenedor-formulario">
+        <!-- <div class="contenedor-formulario">
         <a href="#"
           ><i class="bx bx-search-alt-2" style="color: #ffffff"></i
         ></a>
         <input type="text" />
-      </div>
-    </nav>
+      </div> -->
+      </nav>
+    </div>
 
     <main class="contenedor-main">
       <ul class="contenedor-json"></ul>

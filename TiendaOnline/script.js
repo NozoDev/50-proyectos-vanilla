@@ -21,16 +21,11 @@ function crearTarjetaProductos(productos) {
     <button class="btn-btn">Comprar</button>
     `;
 
-    const product = nuevoProducto.querySelector(".btn-btn");
-    product.addEventListener("click", () => {
-      comprarProducto(producto);
-    });
-
     main.appendChild(nuevoProducto);
   });
 }
+
 crearTarjetaProductos(productos);
 
-function comprarProducto(producto) {
-  console.log("comprando", producto);
-}
+
+//agregar evento al c

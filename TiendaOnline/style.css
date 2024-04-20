@@ -22,6 +22,7 @@ h2 {
 .navbar {
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: #000000;
   color: white;
@@ -70,19 +71,46 @@ h2 {
   margin-top: 100px;
 }
 
-.cart {
-  color: white;
+.contenedor .navbar i {
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.cart:hover {
-  border-radius: 20px;
-  color: red;
-  text-align: center;
+.nav-card {
+  color: black;
+  list-style: none;
+  display: none;
+  padding: 1rem;
 }
 
-.contenedor-formulario {
+.contenedor .navbar button {
+  display: none;
+}
+
+.contenedor .navbar i:hover > .buy-card {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+}
+
+.contenedor .navbar i:hover .nav-card {
+  font-size: 1.4rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
+  margin: 0 10px 0 10px;
+  border-bottom: solid thin #e1e1e1;
+}
+
+.contenedor .navbar i:hover .buy-card > button {
+  display: block;
+  width: 90%;
+  padding: 1rem;
+  margin: 10px auto;
+  background-color: transparent;
+  border: solid thin #e1e1e1;
+  color: #494848;
+  cursor: pointer;
 }
