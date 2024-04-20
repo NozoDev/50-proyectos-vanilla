@@ -86,6 +86,7 @@ h2 {
 
 .contenedor .navbar button {
   display: none;
+  font-size: 1rem;
 }
 
 .contenedor .navbar i:hover > .buy-card {
@@ -113,4 +114,10 @@ h2 {
   border: solid thin #e1e1e1;
   color: #494848;
   cursor: pointer;
+}
+
+.contenedor .navbar i:hover > .buy-card > button:hover {
+  border: solid thin #494848;
+  transition: all 0.4s;
+  background-color: red;
 }
